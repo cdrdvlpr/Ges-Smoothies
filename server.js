@@ -24,9 +24,9 @@ mongoose
     useCreateIndex: true,
   })
   .then((result) =>
-    app.listen(PORT, '0.0.0.0', () => {
+    app.listen(process.env.PORT, '0.0.0.0', () => {
       console.log(
-        `Connected to database & listening on port: ${PORT}`
+        `Connected to database & listening on port: ${process.env.PORT}`
       );
     })
   )
